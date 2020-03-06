@@ -33,7 +33,7 @@ class App extends Component {
           <h4>Résumé & CV</h4>
           <p>
             Download my <a href="/assets/resume.pdf">résumé</a><br/>
-            Download my <a href="/assets/resume.pdf">CV</a>
+            Download my <a href="/assets/cv.pdf">CV</a>
           </p>
         </div>
         <div class="card">
