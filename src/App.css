@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fa {
+  padding: 6px;
+  color: black !important;
+  background: white;
+  font-size: 34px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fa:hover {
+  opacity: 0.7;
+}
+
+.card {
+  background: white;
+  margin: 14px;
+  padding: 20px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: block;
+  width: 1000px;
+}
+
+body {
+  background-image: url('/assets/deepdream.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pub-title {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.pub-data {
+  font-size: 16px;
+  font-style: italic;
+}
+
+#name {
+  margin: 0 !important;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  width: 55%;
+}
+
+#name span {
+  color: #557feb; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: 10px 0 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#headshot {
+  height: 180px;
+  width: 180px;
+}
+
+#quote {
+  margin: auto;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#quote span {
+  font-size: 16px;
+}
+
+li {
+  font-weight: 600;
+}
+
+li span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+#upper {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.vsep {
+  border-left: 1px solid rgba(0,0,0,0.2);
+  height: 16em;
+  margin: 0 24px;
+}
+
+a {
+  color: #557feb !important;
+}
+
+#short-bio {
+  font-size: 16px;
+  width: 45%;
+  text-align: right;
+}
+
+#header-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media only screen and (min-width:600px) and (max-width: 1100px) {
+  #short-bio {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #quote {
+    font-size: 22px;
+    line-height: 1.3em;
+  }
+
+  .card {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fa {
+    font-size: 24px;
+    margin: 0px;
+  }
+  
+  #name {
+    width: unset;
+  }
+
+  #short-bio {
+    display: none;
+    width: unset;
+  }
+
+  #quote {
+    font-size: 12px;
+  }
+
+  #quote span {
+    font-size: 10px;
+  }
+
+  .vsep {
+    height: 9em;
+  }
+
+  .card {
+    width: 82%;
+  }
+
+  #headshot {
+    height: 100px;
+    width: 100px;
+  }
+
+  #description {
+    font-size: 28px;
   }
 }
