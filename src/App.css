@@ -36,10 +36,8 @@
 }
 
 body {
-  background-image: url('/assets/deepdream.jpg');
-  background-repeat: no-repeat;
+  background: url('/assets/deepdream.jpg') center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .pub-title {
