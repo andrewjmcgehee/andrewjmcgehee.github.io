@@ -1,0 +1,399 @@
+\documentclass[12pt]{article}
+
+% PACKAGES / DOC CONFIG
+\usepackage[margin=0.75in]{geometry}
+% \usepackage[none]{hyphenat}
+\usepackage{
+  changepage,
+  enumitem,
+  fontawesome,
+  fontspec,
+  hyperref,
+  microtype,
+  titlesec,
+  titling,
+  xcolor
+}
+\hypersetup{pageanchor=false}
+
+% FONTS
+\setsansfont{Roboto}
+
+% COLORS
+\definecolor{Blue}{HTML}{0077cc}
+\definecolor{LightGrey}{HTML}{cccccc}
+\definecolor{Grey}{HTML}{676767}
+\definecolor{Black}{HTML}{000000}
+\hypersetup{colorlinks=true,urlcolor=Grey}
+
+% SECTION FORMATTING
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\color{Black}\titlerule]
+\titlespacing{\section}{0em}{1em}{1em}
+\setlength\parindent{0pt}
+\pagenumbering{gobble}
+
+% COMMANDS
+\newcommand{\rob}{\fontspec{Roboto}}
+\newcommand{\robI}{\fontspec{RobotoItalic}}
+\newcommand{\robL}{\fontspec{RobotoLight}}
+\newcommand{\robLI}{\fontspec{RobotoLightItalic}}
+\newcommand{\robB}{\fontspec{RobotoBold}}
+\newcommand{\robBI}{\fontspec{RobotoBoldItalic}}
+\newcommand{\dash}{\ \textemdash\ }
+\newcommand{\vtab}{\vspace{0.5em}}
+\newcommand{\entry}{\large\fontspec{Roboto}\bfseries\color{Blue}}
+\newcommand{\dates}{\fontspec{RobotoLight}\color{Grey}\hfill}
+
+\newcount\skillcount
+\newcommand\skilllevel[2]
+{%
+  \hbox
+  {%
+    \hspace{1em}
+    \makebox[4cm][l]{#1}%
+    \skillcount=0
+    \loop\ifnum\skillcount<#2
+      \advance\skillcount1
+      \textcolor{Black}{$\bullet$}%
+    \repeat
+    \loop\ifnum\skillcount<5
+      \advance\skillcount1
+      \textcolor{LightGrey}{$\bullet$}%
+    \repeat
+  }%
+}
+
+\begin{document}
+
+%--------%
+% HEADER %
+%--------%
+
+\begin{minipage}{0.58\linewidth}
+  \fontsize{32pt}{32pt}\selectfont
+  \begin{flushleft}
+    {\fontspec{MontserratLight}Andrew \color{Blue}McGehee}
+  \end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\linewidth}
+  \color{Grey}
+  \vspace{0.7em}
+  \begin{flushright}
+    \robL
+    \href{mailto:andrewjmcgehee.us@gmail.com}{\fontsize{9pt}{9pt}\selectfont\faEnvelope\normalsize\hspace{0.5em}andrewjmcgehee.us@gmail.com}\\
+    \href{https://andrewjmcgehee.github.io}{\faHome\hspace{0.5em}https://andrewjmcgehee.github.io}\\
+    {\faPhone\hspace{0.25em}+1 (205) 300-0030}
+  \end{flushright}
+\end{minipage}
+%\vspace{1em}
+
+%-----------%
+% EDUCATION %
+%-----------%
+
+\section{EDUCATION}
+\begin{sffamily}
+  \robL
+  {\entry{Auburn University}} {\robL\color{Grey}// Bachelor of Software Engineering\hfill 2017 - Present}\\
+  Expected Graduation: December 2020\\
+  Cumulative GPA: 4.0 / 4.0
+\end{sffamily}
+
+%----------%
+% RESEARCH %
+%----------%
+
+\section{RESEARCH EXPERIENCE}
+\begin{sffamily}
+  \robL
+  {\entry Auburn University} {\dates May '18 - Present}\\
+  {\robLI Undergraduate Research Assistant}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob BIOINFORMATICS}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Investigating applications of variational autoencoders and generative adversarial
+            networks (GANs) to synthetically deepen shallow multiple sequence alignment (MSA)
+            inputs in evolutionarily meaningful ways for deep learning models which predict
+            inter-residue distance maps
+      \item Developed an open source 3D protein folding simulator (PolyFold) in Java which allows
+            users to visualize distance-based protein folding processes through highly convergent
+            stochastic optimizations\dash namely gradient descent and simulated annealing
+    \end{itemize}
+    \vtab
+    {\rob EVOLUTIONARY COMPUTING}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Investigating applications of genetic programming (GP) in reinforcement learning (RL)
+            agents for tailoring agents to specific adversary classes for cyber defense tasks
+      \item Introduced novel architecture of a closed feedback loop in which GP primitives benefit
+            from RL informed search of future states, and deep Q networks receive evolved GP
+            heuristics as inputs
+    \end{itemize}
+  \end{adjustwidth}
+  \vtab
+
+  {\entry National Water Center Comet Cooperative Proposal} {\dates Jan. '18 - Jan. '20}\\
+  {\robLI Software Consultant}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob OPTIMIZATION \& DATA MINING}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Designed and implemented an efficient pipeline in Cython for interpolating the stages
+            of \textasciitilde 2.7 million water catchments with a given discharge for a given
+            range of stream orders
+      \item Built a web scraper in Python for automatically downloading nationwide stream data
+            within a given time interval
+    \end{itemize}
+  \end{adjustwidth}
+\end{sffamily}
+
+\section{PUBLICATIONS \& PRESENTATIONS}
+\begin{sffamily}
+  \begin{itemize}[noitemsep,topsep=0pt]
+    \item {\robI PolyFold: an Interactive Visual Simulator for Distance-Based Protein Folding}\\
+      {\robLI\color{Grey}\href{https://arxiv.org/abs/2002.11592}{arXiv:2002.11592}}
+    \item {\robI PolyFold: Augmenting Human Intuition with Machine Learning for Protein Folding}\\
+        {\robLI\color{Grey}Auburn Student Research Symposium 2019, Oral Presentation}
+  \end{itemize}
+\end{sffamily}
+
+%------%
+% WORK %
+%------%
+
+\clearpage
+\section{PROFESSIONAL EXPERIENCE}
+\begin{sffamily}
+  \robL
+  {\entry Google} {\dates Summer 2019}\\
+  {\robLI Software Engineer Intern}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob WORK}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Integrated black-box hyperparameter optimization tools in C++ into an evaluation
+            pipeline for deep learning computer vision models
+      \item Increased F1 score by 1.5\% in initial proof of concept
+      \item Wrote hypothesis testing tools in Python to allow insignificant difference of means to
+            trigger early exit in hyperparameter optimization
+      \item Wrote visualization tools in Python to intuitively demonstrate the progress and relative
+            success of the automated hyperparameter tuning process
+    \end{itemize}
+    \vtab
+
+    {\rob PROFESSIONAL DEVELOPMENT}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Delivered live demo and oral presentation to > 100 senior engineers and peers
+      \item Attended weekly mentor meetings with a senior engineer discussing career trajectory,
+            graduate studies, technical skills, and soft skills
+    \end{itemize}
+  \end{adjustwidth}
+  \vtab
+
+  {\entry Equifax} {\dates Summer 2018}\\
+  {\robLI Software Engineer Intern}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob WORK}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Developed 3D augmented reality (AR) web application in JavaScript to facilitate virtual
+            tours for new interns and full time hires
+      \item Developed a microservice in Python which automated the assignment of new employee access
+            privileges, eliminating hours of manual HR labor
+    \end{itemize}
+  \end{adjustwidth}
+\end{sffamily}
+
+%--------%
+% HONORS %
+%--------%
+
+\section{HONORS}
+\begin{sffamily}
+  \robL
+  {\entry Awards, Honors, \& Scholarships}\\
+  \vspace{-1em}
+  \begin{itemize}[noitemsep,topsep=0pt]
+    \item Auburn University Undergraduate Research Fellow
+    \item Auburn University Engineering Alumni Council Student Panel (4 / 6000+ selected)
+    \item Auburn University CSSE Business Advisory Council Student Panel (20 / 1000+ selected)
+    \item Auburn University Board of Trustees Scholarship
+    \item Barbara Drummond Thorne Scholarship
+    \item Thomas Goode Jones Scholarship
+  \end{itemize}
+\end{sffamily}
+
+%--------%
+% SKILLS %
+%--------%
+
+\section{RELEVANT SKILLS}
+\begin{sffamily}
+  \robL
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry General Programming Languages}\\
+    \skilllevel{C / C++}{5}\\
+    \skilllevel{Java}{5}\\
+    \skilllevel{JavaScript}{3}\\
+    \skilllevel{Python}{5}
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry Markdown \& Scripting Languages}\\
+    \skilllevel{Bash}{4}\\
+    \skilllevel{GitHub Markdown}{5}\\
+    \skilllevel{HTML / CSS}{4}\\
+    \skilllevel{\LaTeX}{4}\\
+  \end{minipage}\\
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry Foreign Languages}\\
+    \skilllevel{German}{3}\\
+    \skilllevel{Russian}{3}\\[0.5em]
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry A.I. / Machine Learning \& Data Science}
+    \begin{adjustwidth}{1.2em}{0em}
+      TensorFlow, Keras, PyTorch, Sci-kit Learn, Numpy, Scipy, Pandas, R\\
+      \vspace{-1em}
+    \end{adjustwidth}
+  \end{minipage}\\
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry Operating Systems}\\
+    \skilllevel{Arch Linux}{4}\\
+    \skilllevel{Debian}{5}\\
+    \skilllevel{Ubuntu}{5}\\[0.5em]
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\linewidth}
+    {\entry Soft Skills \& Competencies}
+    \begin{adjustwidth}{1.2em}{0em}
+      Leadership, Communication, Accountability to Results, Integrity, Creativity, Delegation
+    \end{adjustwidth}
+  \end{minipage}
+\end{sffamily}
+\vspace{-1em}
+
+%---------%
+% COURSES %
+%---------%
+
+\section{RELEVANT COURSEWORK}
+\begin{sffamily}
+  \robL
+  {\robB Introduction to Evolutionary Computing}
+  \begin{adjustwidth}{2em}{0em}
+    Implemented and statistically analyzed evolutionary algorithms, genetic programming, and
+    co-evolution (cooperative and competitive) as applied to NP Hard problems and game A.I.
+  \end{adjustwidth}
+  \vtab
+  {\robB Introduction to Deep Learning}
+  \begin{adjustwidth}{2em}{0em}
+    Implemented SVM, softmax, and neural network classifiers as well as convolutional neural networks
+    from scratch (Numpy only). Designed and now implementing semester long project in which GANs are
+    trained on spectrogram representations of popular songs to generate novel spectrograms from which
+    novel audio may be recovered
+  \end{adjustwidth}
+  \vtab
+  {\robB Research Methods in Evolutionary Computing}
+  \begin{adjustwidth}{2em}{0em}
+    Formulated and executed semester long research proposal in standard NSF format in which the
+    hybridization of GP and RL will be explored for tailoring agents to adversary classes for cyber
+    defense tasks
+  \end{adjustwidth}
+\end{sffamily}
+
+%----------------------%
+% LEADERSHIP & SERVICE %
+%----------------------%
+
+\section{LEADERSHIP \& SERVICE}
+\begin{sffamily}
+  \robL
+  {\entry Auburn A.I. Club} {\dates Aug. 2019 - Present}\\
+  {\robLI Founder, President}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob RESPONSIBILITIES \& ACHIEVEMENTS}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Devised and taught a 12 week beginner friendly curriculum covering topics including: \
+            regression, classification, clustering, neural networks, reinforcement learning, and
+            evolutionary algorithms
+      \item Created interactive, take-home Jupyter notebook exercises as well as "from scratch"
+            (Python and Numpy only) implementations of each topic covered to reinforce concepts
+      \item Delivered 45 minute lectures weekly
+      \item Average weekly attendance: 50
+    \end{itemize}
+  \end{adjustwidth}
+  \vtab
+  {\entry Auburn ACM} {\dates Aug. 2018 - Present}\\
+  {\robLI President}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob RESPONSIBILITIES \& ACHIEVEMENTS}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Oversaw team of 6 officers responsible for ACM and all sub-clubs: \ A.I. Club, Ethical
+            Hacking Club, and Auburn Competitive Programming Team
+      \item Increased weekly attendance across sub-clubs from < 50 members to \textasciitilde 150 members
+    \end{itemize}
+  \end{adjustwidth}
+  \vtab
+  \clearpage
+  {\entry Auburn Competitive Programming Team} {\dates Aug. 2017 - Present}\\
+  {\robLI Coach, Member}
+  \begin{adjustwidth}{2em}{0em}
+    \vtab
+    {\rob RESPONSIBILITIES \& ACHIEVEMENTS}
+    \begin{itemize}[noitemsep,topsep=0pt]
+      \item Delivered biweekly lectures covering problem solving strategies for technical interviews,
+            common algorithms, and data structures to \textasciitilde30 members
+      \item Placed 3rd out of 86 teams in 2019 ICPC Southeastern Regional\dash Division II
+      \item Placed 8th out of 82 teams in 2018 ICPC Southeastern Regional\dash Division II
+    \end{itemize}
+  \end{adjustwidth}
+\end{sffamily}
+
+%------------%
+% REFERENCES %
+%------------%
+
+\section{REFERENCES}
+\begin{sffamily}
+  \robL
+  \begin{adjustwidth}{2em}{0em}
+    {\entry Debswapna Bhattacharya, Ph.D.}\\
+    {\robB Auburn University}\\
+    Assistant Professor, Computer Science \& Software Engineering\\
+    {\color{Blue}\href{mailto:bhattacharyad@auburn.edu}{bhattacharyad@auburn.edu}}
+    \vspace{1em}
+
+    {\entry Daniel Tauritz, Ph.D.}\\
+    {\robB Auburn University}\\
+    Associate Professor, Computer Science \& Software Engineering\\
+    {\color{Blue}\href{mailto:dtauritz@auburn.edu}{dtauritz@auburn.edu}}
+    \vspace{1em}
+
+    {\entry Anh Nguyen, Ph.D.}\\
+    {\robB Auburn University}\\
+    Assistant Professor, Computer Science \& Software Engineering\\
+    {\color{Blue}\href{mailto:anhnguyen@auburn.edu}{anhnguyen@auburn.edu}}
+    \vspace{1em}
+
+    {\entry Nels Beckman, Ph.D.}\\
+    {\robB Google}\\
+    Senior Software Engineer\\
+    {\color{Blue}\href{mailto:nbeckman@google.com}{nbeckman@google.com}}
+    \vspace{1em}
+
+    {\entry Vasil Denchev, Ph.D.}\\
+    {\robB Google}\\
+    Senior Software Engineer\\
+    {\color{Blue}\href{mailto:denchev@google.com}{denchev@google.com}}
+    \vspace{1em}
+
+    {\entry Tom Weng, Ph.D.}\\
+    {\robB Google}\\
+    Software Engineer\\
+    {\color{Blue}\href{mailto:zweng@google.com}{zweng@google.com}}
+  \end{adjustwidth}
+\end{sffamily}
+
+\end{document}
