@@ -32,8 +32,8 @@ class App extends Component {
         <div class="card">
           <h4>Résumé & CV</h4>
           <p>
-            Download my <a href="/assets/resume.pdf">résumé</a><br/>
-            Download my <a href="/assets/cv.pdf">CV</a>
+            Download my <a href="/assets/resume.pdf">résumé</a> (Doc)<br/>
+            Download my <a href="/assets/cv.pdf">CV</a> (LaTeX)
           </p>
         </div>
         <div class="card">
@@ -45,27 +45,109 @@ class App extends Component {
         </div>
         <div class="card">
           <h4>Library</h4>
-          <ul>
-            <li>AI:  a Modern Approach <span>by Russel Norvig</span></li>
-            <li>The Alchemist <span>by Paulo Coehlo</span></li>
-            <li>Cracking the Coding Interview <span>by Gayle Laakmann McDowell</span></li>
-            <li>Deep Learning <span>by Ian Goodfellow, et al.</span></li>
-            <li>Deep Learning with Python <span>by François Chollet</span></li>
-            <li>The Emperor's New Mind <span>by Roger Penrose</span></li>
-            <li>Essentials of Classic Italian Cooking <span>by Marcella Hazan</span></li>
-            <li>God Created the Integers <span>by Stephen Hawking</span></li>
-            <li>Godel, Escher, Bach:  an Eternal Golden Braid <span>by Douglas Hofstadter</span></li>
-            <li>Grokking Deep Learning <span>by Andrew Trask</span></li>
-            <li>Hands-On Machine Learning with Sci-kit Learn and TensorFlow <span>by Aurélien Géron</span></li>
-            <li>The Hundred-page Machine Learning Book <span>by Andriy Burkov</span></li>
-            <li>Introduction to Evolutionary Computing <span>by Agoston E. Eiben</span></li>
-            <li>Joy of Cooking <span>by Irma S. Rombauer</span></li>
-            <li>Learning from Data <span>by Yaser S. Abu-Mostafa, et al.</span></li>
-            <li>Machine Learning Yearning <span>by Andrew Ng</span></li>
-            <li>Mastering the Art of French Cooking <span>by Julia Child</span></li>
-            <li>Pattern Recognition and Machine Learning <span>by Cristopher Bishop</span></li>
-            <li>Reinforcement Learning:  an Introduction <span>by Andrew Barto & Richard S. Sutton</span></li>
-          </ul>
+          <table id="library">
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Own</th>
+            </tr>
+            <tr>
+              <td class="book-title">AI:  a Modern Approach</td> 
+              <td class="book-author">Russel Norvig</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">The Alchemist</td> 
+              <td class="book-author">Paulo Coehlo</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Cracking the Coding Interview</td> 
+              <td class="book-author">Gayle Laakmann McDowell</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Deep Learning</td> 
+              <td class="book-author">Ian Goodfellow, et al.</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Deep Learning with Python</td> 
+              <td class="book-author">François Chollet</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">The Emperor's New Mind</td> 
+              <td class="book-author">Roger Penrose</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Essentials of Classic Italian Cooking</td> 
+              <td class="book-author">Marcella Hazan</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">God Created the Integers</td> 
+              <td class="book-author">Stephen Hawking</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Godel, Escher, Bach:  an Eternal Golden Braid</td> 
+              <td class="book-author">Douglas Hofstadter</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Grokking Deep Learning</td> 
+              <td class="book-author">Andrew Trask</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Hands-On Machine Learning with Sci-kit Learn and TensorFlow</td> 
+              <td class="book-author">Aurélien Géron</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">The Hundred-page Machine Learning Book</td> 
+              <td class="book-author">Andriy Burkov</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Introduction to Evolutionary Computing</td> 
+              <td class="book-author">Agoston E. Eiben</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Joy of Cooking</td> 
+              <td class="book-author">Irma S. Rombauer</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Learning from Data</td> 
+              <td class="book-author">Yaser S. Abu-Mostafa, et al.</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Machine Learning Yearning</td> 
+              <td class="book-author">Andrew Ng</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="book-title">Mastering the Art of French Cooking</td> 
+              <td class="book-author">Julia Child</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Pattern Recognition and Machine Learning</td> 
+              <td class="book-author">Cristopher Bishop</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td class="book-title">Reinforcement Learning:  an Introduction</td> 
+              <td class="book-author">Andrew Barto & Richard S. Sutton</td>
+              <td></td>
+            </tr>
+          </table>
+          <p>*the <em>Own</em> column is so that my lovely girlfriend Marisa knows which books to buy me when she wants to surprise me. Isn't she sweet?</p>
         </div>
       </div>
     );
