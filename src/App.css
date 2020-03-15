@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+#works {
+  width: 100%;
+}
+
 .book-title {
   font-weight: bold;
 }
@@ -25,6 +29,25 @@ table {
 td {
   padding: 2px 8px;
   border-bottom: 1px solid #ddd;
+}
+
+li {
+  font-weight: 400 !important;
+  font-style: italic;
+}
+ 
+ul {
+  margin: 8px 0;
+}
+
+#works .pub-title {
+  padding-top: 10px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+#works .pub-data {
+  padding-bottom: 10px;
 }
 
 th {
@@ -83,6 +106,7 @@ body {
 .pub-data {
   font-size: 16px;
   font-style: italic;
+  margin: 0;
 }
 
 #name {
