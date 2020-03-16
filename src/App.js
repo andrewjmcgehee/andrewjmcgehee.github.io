@@ -27,13 +27,12 @@ class App extends Component {
         </div>
         <div className="card">
           <h4>Research Interests</h4>
-          <p>My research interests lie broadly in the field of AI and machine learning. The medium or application domain is less important to me than the exploration of novel or state of the art machine learning application and theory. My current course work involves applying generative deep learning models for novel audio synthesis and evolutionary computing techniques applied to cyber defense. My current undergraduate research is in computational biology and focuses on generative and deep learning methods for distance based prediction for protein folding.</p>
+          <p>My research interests lie broadly in the field of AI and machine learning. The medium or application domain is less important to me than the exploration of novel or state of the art AI application and theory. My current course work involves visualization of preferred inputs and activations for explaining and understanding deep learning models and evolutionary computing techniques applied to cyber defense. My current undergraduate research is in computational biology and focuses on generative and deep learning methods for distance based prediction for protein folding.</p>
         </div>
         <div className="card">
-          <h4>CV</h4>
+          <h4>Curriculum Vitae</h4>
+          Feel free to download my CV or use it as a template. Compile with lualatex.<br/> 
           <a href="/assets/cv.tex">LaTeX</a> | <a href="/assets/cv.pdf">PDF</a>
-          <h4>Résumé</h4>
-          <a href="/assets/resume.pdf">PDF</a>
         </div>
         <div className="card">
           <h4>Awards // Honors</h4>
@@ -46,30 +45,14 @@ class App extends Component {
         <div className="card">
           <h4>Publications // Presentations</h4>
           <table id="works">
-            <tr>
-              <td className="pub-title">PolyFold: an Interactive Visual Simulator for Distance-Based Protein Folding</td>
-            </tr>
-            <tr>
-              <td className="pub-data"><a href="https://arxiv.org/abs/2002.11592">arxiv:2002.11592</a></td>
-            </tr>
-            <tr>
-              <td className="pub-title">PolyFold: Augmenting Human Intuition with Machine Learning for Protein Folding</td>
-            </tr>
-            <tr>
-              <td className="pub-data">Auburn University Student Research Symposium 2019 - Oral Presenter</td>
-            </tr>
-            <tr>
-              <td className="pub-title">Introducing PolyFold, a Tool for Visualizing Stochastic Optimizations for Protein Folding</td>
-            </tr>
-            <tr>
-              <td className="pub-data">Auburn University, Computational Biology Fall 2018 - Guest Lecturer</td>
-            </tr>
-            <tr>
-              <td className="pub-title">Preparing for Technical Interviews with the Big 4</td>
-            </tr>
-            <tr>
-              <td className="pub-data">Auburn University, Intro to Algorithms Fall 2018 - Guest Lecturer</td>
-            </tr>
+            <tr><td className="pub-title">PolyFold: an Interactive Visual Simulator for Distance-Based Protein Folding</td></tr>
+            <tr><td className="pub-data"><a href="https://arxiv.org/abs/2002.11592">arxiv:2002.11592</a></td></tr>
+            <tr><td className="pub-title">PolyFold: Augmenting Human Intuition with Machine Learning for Protein Folding</td></tr>
+            <tr><td className="pub-data">Auburn University Student Research Symposium 2019 - Oral Presenter</td></tr>
+            <tr><td className="pub-title">Introducing PolyFold, a Tool for Visualizing Stochastic Optimizations for Protein Folding</td></tr>
+            <tr><td className="pub-data">Auburn University, Computational Biology Fall 2018 - Guest Lecturer</td></tr>
+            <tr><td className="pub-title">Preparing for Technical Interviews with the Big 4</td></tr>
+            <tr><td className="pub-data">Auburn University, Intro to Algorithms Fall 2018 - Guest Lecturer</td></tr>
           </table>
         </div>
         <div className="card">
@@ -176,7 +159,7 @@ class App extends Component {
               <td></td>
             </tr>
           </table>
-          <p>*the <em>Own</em> column is so that my lovely girlfriend Marisa knows which books to buy me when she wants to surprise me. Isn't she sweet?</p>
+          <p className="aside">*the <em>Own</em> column is for my lovely girlfriend Marisa for when she wants to buy me hard copies of my favorite books. Isn't she sweet?</p>
         </div>
       </div>
     );

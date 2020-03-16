@@ -27,8 +27,12 @@ table {
 }
 
 td {
-  padding: 2px 8px;
+  padding: 6px 8px;
   border-bottom: 1px solid #ddd;
+}
+
+.aside {
+  text-align: center;
 }
 
 li {
@@ -53,7 +57,7 @@ ul {
 th {
   padding: 6px 8px;
   text-align: left;
-  background-color: #557feb; 
+  background-color: #3c7ef3; 
   color: white;
 }
 
@@ -117,7 +121,7 @@ body {
 }
 
 #name span {
-  color: #557feb; 
+  color: #3c7ef3; 
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -164,7 +168,7 @@ li span {
 }
 
 a {
-  color: #557feb !important;
+  color: #3c7ef3 !important;
 }
 
 #short-bio {
