@@ -99,8 +99,16 @@ h2 {
     display: block; } 
 }
 
+section.resume-section {
+  padding-top: 5rem !important;
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none; 
+}
+
+section.resume-section .resume-item {
+  margin-bottom: 0px !important;
 }
 
 #home {
@@ -154,10 +162,6 @@ a:hover, a:focus, a:active {
   padding-bottom: 5rem !important;
 }
 
-#about {
-  padding-top: 5rem !important;
-}
- 
 li span {
   color: #4dafff;
 }
