@@ -17,7 +17,7 @@ const ContactCard = () => {
         </div>
         <div className="github">
           <FaGithub className="fa-icon" color="white" />
-          <a href="https://instagram.com/andrewjmcgehee">andrewjmcgehee</a>
+          <a href="https://github.com/andrewjmcgehee">andrewjmcgehee</a>
         </div>
         <div className="insta">
           <FaInstagram className="fa-icon" />
