@@ -1,0 +1,87 @@
+.contact-card {
+  height: 550px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: rgb(37, 47, 67) 0px 8px 30px -10px;
+  margin-top: 140px;
+  transition: all ease 300ms;
+}
+
+.contact-card:hover {
+  transform: scale(1.02, 1.02);
+  box-shadow: rgb(37, 47, 67) 0px 8px 30px -12px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.insta, .linkedin {
+  background-color: black;
+  width: 70%;
+  height: 44px;
+  margin: 12px auto;
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+  border-radius: 6px;
+  transition: all ease 300ms;
+}
+
+.insta:hover, .linkedin:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.insta > a, 
+.insta > a:hover, 
+.linkedin > a,
+.linkedin > a:hover {
+  color: white;
+}
+
+.fa-icon {
+  color: white;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.profile {
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-card {
+    height: 525px;
+    width: 350px;
+    margin-top: 140px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-card {
+    height: 488px;
+    width: 325px;
+    margin-top: 130px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contact-card {
+    height: 420px;
+    width: 280px;
+    margin-top: 110px;
+  }
+  .insta, .linkedin {
+    height: 40px;
+  }
+  .insta > a, .linkedin >a {
+    color: white;
+    font-size: 0.9rem !important;
+  }
+}

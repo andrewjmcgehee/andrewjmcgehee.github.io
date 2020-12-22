@@ -1,0 +1,46 @@
+a {
+  color: #282c34;
+  cursor: pointer;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color ease 350ms;
+  padding: 6px 0;
+}
+
+a:hover {
+  color: #ec5200;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: rgb(37, 47, 67) 0px 10px 10px -12px;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px;
+  height: 80px;
+  width: 700px;
+}
+
+.brand {
+  color: #282c34;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand:hover {
+  color: #282c34;
+}
