@@ -10,7 +10,7 @@ const Home = () => {
         <h1>About Me</h1>
         <p>
           My name is Andrew, and I'm a software engineer at Google. I love learning about artificial
-          intelligence and neuroscience. Apart from software, computer, or brain stuff, I love 
+          intelligence and neuroscience. Apart from programming, AI, and brains, I love 
           playing guitar and singing, practicing Brazilian jiu jitsu and yoga, and gourmet cooking.
           I love to travel and learn foreign languages, and I'm constantly devouring a plethora of 
           random sources of information about things like space travel, the environment, fitness, 

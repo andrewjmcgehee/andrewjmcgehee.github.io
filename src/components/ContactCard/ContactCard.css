@@ -22,7 +22,7 @@
   height: 100%;
 }
 
-.insta, .linkedin {
+.github, .insta, .linkedin {
   background-color: black;
   width: 70%;
   height: 44px;
@@ -34,10 +34,12 @@
   transition: all ease 300ms;
 }
 
-.insta:hover, .linkedin:hover {
+.github:hover, .insta:hover, .linkedin:hover {
   transform: scale(1.02, 1.02);
 }
 
+.github > a,
+.github > a:hover,
 .insta > a, 
 .insta > a:hover, 
 .linkedin > a,
