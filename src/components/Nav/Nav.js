@@ -15,7 +15,7 @@ const Nav = ({ callback }) => {
           </a>
         </span>
         <a onClick={() => callback(undefined)}>Home</a>
-        <a onClick={() => callback('blog')}>Blog</a>
+        <a onClick={() => callback('extras')}>Extras</a>
         <a href="cv.pdf" target="_blank">CV</a>
       </div>
     </div>

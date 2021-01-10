@@ -1,0 +1,128 @@
+.post-card {
+  height: 200px !important;
+  width: 700px;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: rgb(37, 47, 67) 0px 8px 30px -10px;
+  transition: transform ease 400ms;
+  margin-bottom: 40px;
+}
+
+.post-card:hover {
+  transform: scale(1.02, 1.02);
+  box-shadow: rgb(37, 47, 67) 0px 8px 30px -12px;
+}
+
+.post-card-photo {
+  height: 100%;
+  max-width: 200px;
+}
+
+.post-card-text {
+  padding: 12px;
+}
+
+.post-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #282c34;
+  font-family: "Oswald", sans-serif;
+}
+
+.post-date {
+  font-size: 0.94rem;
+  margin-top: 6px;
+  font-weight: 100;
+  color: rgba(0,0,0,0.65);
+}
+
+.post-card-summary {
+  font-size: 1.1rem;
+  margin-top: 6px;
+  color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  height: 7.2em; /* 6 lines */
+  position: relative;
+}
+
+.post-card-summary:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 70%);
+}
+
+.post-card-open {
+  height: max(100vh, 100%) !important;
+  width: 100vw;
+  display: flex;
+  transition: transform ease 400ms;
+  z-index: 999;
+  background-color: white;
+}
+
+.post-card-text-open {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.post-card-title-open {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #282c34;
+  font-family: "Oswald", sans-serif;
+}
+
+.exit-container {
+  display: flex;
+  justify-content: center;
+  color: #ec5200;
+  transition: background-color ease 500ms;
+  border-radius: 8px;
+}
+
+.exit-text {
+  margin: 14px 0 0 0;
+  padding-right: 12px;
+}
+
+.exit-container:hover {
+  background-color: rgba(236,82,0,0.3);
+}
+
+.exit-button {
+  height: 24px;
+  padding: 12px;
+}
+
+.exit-button:hover {
+}
+
+@media only screen and (max-width: 420px) {
+  .post-card { 
+    margin-bottom: 30px; 
+    height: 120px !important;
+    width: 90vw;
+  }
+  .post-card-photo {
+    max-width: 120px;
+  }
+  .post-card-title {
+    font-size: 1rem;
+  }
+  .post-date {
+    font-size: 0.8rem;
+  }
+  .post-card-summary {
+    font-size: 0.8rem;
+    height: 3.6em; /* 3 lines */
+  }
+}

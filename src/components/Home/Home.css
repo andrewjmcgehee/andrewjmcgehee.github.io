@@ -7,7 +7,7 @@
 
 .about {
   max-width: 700px;
-  margin: 20px 40px;
+  margin: 20px 40px 40px 40px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -16,6 +16,12 @@ p {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: rgba(0,0,0,0.2)
 }
 
 @media only screen and (max-width: 375px) {

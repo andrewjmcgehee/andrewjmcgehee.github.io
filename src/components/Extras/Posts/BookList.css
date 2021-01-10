@@ -1,0 +1,45 @@
+.booklist-container {
+  max-width: 700px;
+  margin: 20px 40px 40px 40px;
+  color: #282c34;
+  font-family: "Oswald";
+  height: 100%;
+}
+
+a {
+  text-decoration: underline,
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+li span {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.table-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(36,108,255);
+}
+
+table tr {
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+table tr td {
+  padding: 6px;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(0,108,255,0.2);
+  color: black;
+}

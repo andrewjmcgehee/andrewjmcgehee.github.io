@@ -18,6 +18,7 @@ const Home = () => {
           physical books (rather than reddit or other online articles). A more typical (and 
           professional) overview of my research and career interests follows.
         </p>
+        <hr/>
         <p>
           My research interests lie broadly in the fields of artificial intelligence, deep learning, 
           and neuroscience. I am particularly interested in deep reinforcement learning, the role of 

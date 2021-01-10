@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Blog from './components/Blog/Blog';
+import Extras from './components/Extras/Extras';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
 import './App.css';
@@ -11,7 +11,7 @@ const App = () => {
   function switchPage() {
     if (!page) return <Home />;
     if (page === 'home') return <Home />;
-    if (page === 'blog') return <Blog />;
+    if (page === 'extras') return <Extras />;
   }
 
   return (
