@@ -2,7 +2,7 @@ import {FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa';
 
 import './ContactCard.css';
 
-import profile from '../assets/profile.png';
+import profile from '../assets/profile.jpg';
 
 const ContactCard = () => {
   return (
