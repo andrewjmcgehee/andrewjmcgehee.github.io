@@ -5,7 +5,6 @@ import './Extras.css';
 import BookList from './Posts/BookList';
 // Images
 import books from '../assets/books.png';
-import test2 from '../assets/test2.png';
 
 const Extras = () => {
   return (
