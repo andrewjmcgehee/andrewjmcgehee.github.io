@@ -39,12 +39,12 @@ const BookList = () => {
           <Book title="God Created the Integers" author="Stephen Hawking" classes="B"/>
           <Book title="The Hitchhiker's Guide to the Galaxy" author="Douglas Adams" classes="RP"/>
           <Book title="Intro to Evolutionary Computing" author="A. E. Eiben & J. E. Smith" classes="RD"/>
-          <Book title="Joy of Cooking" author="Irma S. Rombauer & Marion Rombauer Becker" classes="RD"/>
+          <Book title="Joy of Cooking" author="Irma S. Rombauer & Marion Rombauer Becker" classes="NP"/>
           <Book title="A Journey to the Center of the Earth" author="Jules Verne" classes="NP"/>
           <Book title="The Jungle Book" author="Rudyard Kipling" classes="NP"/>
           <Book title="Mastering the Art of French Cooking" author="Julia Child" classes="NP"/>
           <Book title="Oliver Twist" author="Charles Dickens" classes="NP"/>
-          <Book title="Pattern Recognition & Machine Learning" author="Christopher M. Bishop" classes="NP"/>
+          <Book title="Pattern Recognition & Machine Learning" author="Christopher M. Bishop" classes="RP"/>
           <Book title="Reinforcement Learning: an Introduction" author="Richard S. Sutton & Andrew G. Barto" classes="RP"/>
           <Book title="A Tale of Two Cities" author="Charles Dickens" classes="NP"/>
           <Book title="Robinson Crusoe" author="Daniel Defoe" classes="NP"/>

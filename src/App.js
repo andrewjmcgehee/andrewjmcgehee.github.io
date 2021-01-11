@@ -1,26 +1,31 @@
-import { useState } from 'react';
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
-import Extras from './components/Extras/Extras';
+import NotHome from './components/NotHome/NotHome';
 import Home from './components/Home/Home';
 import Nav from './components/Nav/Nav';
 import './App.css';
 
 const App = () => {
-  const [page, setPage] = useState(undefined);
-
-  function switchPage() {
-    if (!page) return <Home />;
-    if (page === 'home') return <Home />;
-    if (page === 'extras') return <Extras />;
-  }
-
   return (
+    <Router>
     <div className="App">
-      <Nav callback={setPage} />
+      <Nav/>
       <div className="container">
-        {switchPage()}
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/not-home">
+            <NotHome/>
+          </Route>
+        </Switch>
       </div>
     </div>
+    </Router>
   );
 }
 
