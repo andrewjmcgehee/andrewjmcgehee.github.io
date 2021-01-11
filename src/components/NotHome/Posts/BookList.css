@@ -6,8 +6,8 @@
   height: 100%;
 }
 
-a {
-  text-decoration: underline,
+p a {
+  text-decoration: underline;
 }
 
 table {
@@ -17,6 +17,12 @@ table {
 
 li span {
   font-weight: 700;
+}
+
+ul {
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: "Oswald", sans-serif;
 }
 
 strong {
@@ -32,7 +38,7 @@ strong {
 table tr {
   font-size: 1.1rem;
   font-weight: 300;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
 }
 
 table tr td {
@@ -40,6 +46,6 @@ table tr td {
 }
 
 table tr:nth-child(even) {
-  background-color: rgba(0,108,255,0.2);
+  background-color: rgba(0,108,255,0.15);
   color: black;
 }

@@ -5,13 +5,12 @@
   border-radius: 6px;
   overflow: hidden;
   box-shadow: rgb(37, 47, 67) 0px 8px 30px -10px;
-  transition: transform ease 400ms;
+  transition: transform ease 300ms;
   margin-bottom: 40px;
 }
 
 .post-card:hover {
   transform: scale(1.02, 1.02);
-  box-shadow: rgb(37, 47, 67) 0px 8px 30px -12px;
 }
 
 .post-card-photo {

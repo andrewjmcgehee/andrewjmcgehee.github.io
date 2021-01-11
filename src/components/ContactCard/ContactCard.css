@@ -31,11 +31,11 @@
   padding-left: 40px;
   align-items: center;
   border-radius: 6px;
-  transition: all ease 300ms;
+  transition: background-color ease 400ms;
 }
 
 .github:hover, .insta:hover, .linkedin:hover {
-  transform: scale(1.02, 1.02);
+  background-color: #ec5200;
 }
 
 .github > a,

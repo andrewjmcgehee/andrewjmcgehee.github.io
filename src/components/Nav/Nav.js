@@ -1,21 +1,21 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Nav.css';
 
-const Nav = ({ callback }) => {
+const Nav = () => {
   const size = useWindowSize();
 
   return (
     <div className="nav-container">
       <div className="navbar">
         <span>
-          <a className="brand" onClick={() => callback('home')}>
+          <Link className="brand" to="/">
             {(size.width > 512) ? "Andrew J. McGehee" : "AJM"}
-          </a>
+          </Link>
         </span>
-        <a onClick={() => callback(undefined)}>Home</a>
-        <a onClick={() => callback('extras')}>Extras</a>
+        <Link to="/">Home</Link>
+        <Link to="/not-home">Not Home</Link>
         <a href="cv.pdf" target="_blank">CV</a>
       </div>
     </div>

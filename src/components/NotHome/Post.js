@@ -3,7 +3,7 @@ import './Post.css'
 
 import leftArrow from '../assets/left-arrow.png';
 
-const Post = ({postImage, postTitle, postDate, postSummary, postContent}) => {
+const Post = ({postImage, postTitle, postDate, postSummary, postContent, isUpdateDate}) => {
   const [isOpen, setOpen] = useState(false);
 
   function toggleOpen() {
@@ -22,7 +22,9 @@ const Post = ({postImage, postTitle, postDate, postSummary, postContent}) => {
           {postTitle}
         </div>
         <div className="post-date">
-          {postDate}
+          { isUpdateDate ? 
+            `Updated: ${postDate.toLocaleDateString()}` : 
+            postDate.toLocaleDateString() }
         </div>
         <div className="post-card-content">
           {postContent}
@@ -37,7 +39,9 @@ const Post = ({postImage, postTitle, postDate, postSummary, postContent}) => {
           {postTitle}
         </div>
         <div className="post-date" onClick={toggleOpen}>
-          {postDate}
+          { isUpdateDate ? 
+            `Updated: ${postDate.toLocaleDateString()}` : 
+            postDate.toLocaleDateString() }
         </div>
         <div className="post-card-summary" onClick={toggleOpen}>
           {postSummary}
