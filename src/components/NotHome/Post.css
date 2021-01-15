@@ -53,7 +53,6 @@
   bottom: 0;
   right: 0;
   width: 70%;
-  line-height: 1.2em;
   height: 1.2;
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 70%);
 }
@@ -121,7 +120,21 @@
   }
   .post-card-summary {
     font-size: 0.8rem;
-    line-height: 1.2em;
-    height: 3.6em; /* 3 lines */
+    margin-top: 6px;
+    color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    line-height: 0.9em;
+    height: 2.7em; /* 3 lines */
+    position: relative;
+  }
+  .post-card-summary:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 0.8;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 70%);
   }
 }
