@@ -13,15 +13,15 @@ const ContactCard = () => {
       <div className="card-details">
         <div className="linkedin">
           <FaLinkedin className="fa-icon"/>
-          <a href="https://linkedin.com/in/andrewjmcgehee">andrewjmcgehee</a>
+          <a href="https://linkedin.com/in/andrewjmcgehee" target="_blank">andrewjmcgehee</a>
         </div>
         <div className="github">
           <FaGithub className="fa-icon" color="white"/>
-          <a href="https://github.com/andrewjmcgehee">andrewjmcgehee</a>
+          <a href="https://github.com/andrewjmcgehee" target="_blank">andrewjmcgehee</a>
         </div>
         <div className="insta">
           <FaInstagram className="fa-icon"/>
-          <a href="https://instagram.com/andrewjmcgehee">@andrewjmcgehee</a>
+          <a href="https://instagram.com/andrewjmcgehee" target="_blank">@andrewjmcgehee</a>
         </div>
       </div>
     </div>
