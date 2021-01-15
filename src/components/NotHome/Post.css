@@ -41,6 +41,7 @@
   margin-top: 6px;
   color: rgba(0,0,0,0.7);
   overflow: hidden;
+  line-height: 1.2em;
   height: 7.2em; /* 6 lines */
   position: relative;
 }
@@ -52,7 +53,8 @@
   bottom: 0;
   right: 0;
   width: 70%;
-  height: 1.2em;
+  line-height: 1.2em;
+  height: 1.2;
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 70%);
 }
 
@@ -102,9 +104,6 @@
   padding: 12px;
 }
 
-.exit-button:hover {
-}
-
 @media only screen and (max-width: 420px) {
   .post-card { 
     margin-bottom: 30px; 
@@ -122,6 +121,7 @@
   }
   .post-card-summary {
     font-size: 0.8rem;
+    line-height: 1.2em;
     height: 3.6em; /* 3 lines */
   }
 }
